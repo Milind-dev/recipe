@@ -8,14 +8,14 @@ import { Rings } from "react-loader-spinner";
 
 const Localfiles = () => {
   const [loading, setLoading] = useState(false);
-  const [inputsearch, setinputsearch] = useState("yogurt");
+  const [inputsearch, setinputsearch] = useState("");
   // const [foodstore, setfoodstore] = useState([]);
   const [foodstores, setfoodstores] = useState([]);
   const [addcartspoon, setaddcartspoon] = useState([]);
-  const [page, setPage] = useState(1);
-  const [limit, setlimit] = useState(4);
+  // const [page, setPage] = useState(1);
+  // const [limit, setlimit] = useState(4);
 
-  const [errormessage,seterrormsg] = useState("error msg");
+  const [inputloader,setinputLoader] = useState("loader...");
   
 
   const handleSearchFood = async ()  => {
@@ -40,7 +40,7 @@ const Localfiles = () => {
       // setfoodstores(searchresult)
     }
     catch(err){
-       seterrormsg("error")
+      setinputLoader("error")
     }
     
   }
@@ -134,7 +134,7 @@ const Localfiles = () => {
             className="foodsearchinput"
             value={inputsearch}
             onChange={(e) =>  setinputsearch(e.target.value)}
-            placeholder="search data food"
+            placeholder="search food"
           />
         </div>
         <button className="addsortAsc" onClick={handleSortAsc}>
@@ -177,7 +177,9 @@ const Localfiles = () => {
             );
           })
         ) : (
-          <Rings color="#00BFFF" height={180} width={180} />
+          <div style={{marginLeft:"79vh"}}>
+            <span className="spinloader"> <p>{inputloader}</p><Rings className="spinloader" color="#00BFFF" height={180} width={180} /></span> 
+          </div>
         )}
       </div>
     </React.Fragment>

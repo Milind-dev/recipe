@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+
+
+.searchheader{
+  color: white;
+  letter-spacing: 0.4cm;
+  margin: 4vh;
+}
+
+@media (min-width: 320px) and (max-width: 776px) {
+
+}
+@media (min-width: 777px) and (max-width: 900px) {
+ 
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+
+}
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  .searchheader{
+    color: white;
+    letter-spacing: 0.4cm;
+    margin: 4vh;
+  }
+  
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
