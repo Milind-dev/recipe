@@ -1,0 +1,32 @@
+{
+  "name": "recipeproject",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000r\u0000e\u0000c\u0000i\u0000p\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milind-dev/recipe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Milind-dev/recipe/issues"
+  },
+  "homepage": "https://github.com/Milind-dev/recipe#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-router": "0.0.1",
+    "joi": "^17.10.1",
+    "joi-password-complexity": "^5.2.0",
+    "mongoose": "^7.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}
