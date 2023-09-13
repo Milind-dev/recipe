@@ -1,5 +1,5 @@
 const axios = require("axios");
-const data = require('../data.json')
+// const data = require('../data.json')
 const { StatusCodes } = require("http-status-codes");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
